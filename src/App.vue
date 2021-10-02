@@ -1,30 +1,25 @@
 <template>
   <div id="app">
-    <div id="nav" v-if="isShowBar">
-      <top-bar/>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import TopBar from './components/TopBar'
 
 export default {
   name: 'App',
-  data(){
-    return{
-      isShowBar:false
+  data () {
+    return {
+
     }
   },
 
-  components:{
-      TopBar
+  components: {
+
   },
-  mounted(){
-     this.isShowBar = window.sessionStorage.getItem('isShowBar')
-  
+  mounted () {
+
   }
 }
 </script>
@@ -38,17 +33,5 @@ export default {
   color: #2c3e50;
   height: 100vh;
   width: 100%;
-}
-
-#nav {
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

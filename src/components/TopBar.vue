@@ -7,17 +7,15 @@
       theme="dark"
     >
       <a-menu-item key="mail">
-        <a-icon type="mail" />Navigation One
+        <a-icon type="mail" />前端导航
       </a-menu-item>
-      <a-menu-item key="app">
-        <a-icon type="appstore" />Navigation Two
-      </a-menu-item>
+
       <a-sub-menu>
         <span
           slot="title"
           class="submenu-title-wrapper"
         >
-          <a-icon type="setting" />Navigation Three - Submenu
+          <a-icon type="setting" />算法与数据结构
         </span>
         <a-menu-item-group title="Item 1">
           <a-menu-item key="setting:1">
@@ -36,12 +34,17 @@
           </a-menu-item>
         </a-menu-item-group>
       </a-sub-menu>
+
+      <a-menu-item key="app">
+        <a-icon type="appstore" />网站架构
+      </a-menu-item>
+
       <a-menu-item key="alipay">
         <a
           href="https://antdv.com"
           target="_blank"
           rel="noopener noreferrer"
-        >Navigation Four - Link</a>
+        >关于我</a>
       </a-menu-item>
 
       <a-menu-item style="float: right;">
