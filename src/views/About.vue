@@ -1,9 +1,6 @@
 <template>
   <div class="about">
-    <div
-      id="nav"
-      v-if="isShowBar"
-    >
+    <div id="nav">
       <top-bar />
     </div>
     <h1>This is an about page</h1>

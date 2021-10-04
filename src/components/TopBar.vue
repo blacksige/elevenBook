@@ -6,8 +6,8 @@
       style="text-align:left;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);"
       theme="dark"
     >
-      <a-menu-item key="mail">
-        <a-icon type="mail" />前端导航
+      <a-menu-item key="home">
+        <a-icon type="html5" />前端导航
       </a-menu-item>
 
       <a-sub-menu>
@@ -15,7 +15,7 @@
           slot="title"
           class="submenu-title-wrapper"
         >
-          <a-icon type="setting" />算法与数据结构
+          <a-icon type="radar-chart" />算法与数据结构
         </span>
         <a-menu-item-group title="Item 1">
           <a-menu-item key="setting:1">
@@ -36,19 +36,18 @@
       </a-sub-menu>
 
       <a-menu-item key="app">
-        <a-icon type="appstore" />网站架构
+        <a-icon type="appstore" />网站源码
       </a-menu-item>
 
       <a-menu-item key="alipay">
-        <a
-          href="https://antdv.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >关于我</a>
+        <router-link to="/">
+          <a-icon type="smile" />
+          关于我
+        </router-link>
       </a-menu-item>
 
       <a-menu-item style="float: right;">
-        Hi,{{name}}
+        Hi,<span style="font-size: 16px;">{{name}}</span>
       </a-menu-item>
     </a-menu>
   </div>
