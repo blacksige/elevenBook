@@ -4,38 +4,23 @@
       <top-bar />
     </div>
     <div class="home-content">
-      <a-row
-        type="flex"
-        :gutter="20"
-        justify="center"
-        style="margin: 30px;"
-      >
-        <a-col :span="6">
-          <box />
-        </a-col>
-        <a-col :span="6">
-          <box />
-        </a-col>
-        <a-col :span="6">
-          <box />
-        </a-col>
-      </a-row>
-      <a-row
-        type="flex"
-        :gutter="20"
-        justify="center"
-        style="margin: 30px;"
-      >
-        <a-col :span="6">
-          <box />
-        </a-col>
-        <a-col :span="6">
-          <box />
-        </a-col>
-        <a-col :span="6">
-          <box />
-        </a-col>
-      </a-row>
+      <div class="row">
+        <box />
+
+        <box />
+
+        <box />
+
+      </div>
+      <div class="row">
+
+        <box />
+
+        <box />
+
+        <box />
+
+      </div>
     </div>
   </div>
 </template>
@@ -56,8 +41,21 @@ export default {
 </script>
 
 
-<style lang="less">
-.home-content {
-  padding: 50px;
+<style lang="less" scope>
+.home {
+  height: 100%;
+  width: 100%;
+  background-image: url("../assets/8.jpg");
+  background-size: 100% 100%;
+  .home-content {
+    padding: 50px;
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 5%;
+    }
+  }
 }
 </style>

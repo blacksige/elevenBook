@@ -4,30 +4,40 @@
       <div
         class="title-style"
         @click="$open('https://github.com/skidding/illustrated-algorithms')"
-      >基于JavaScript的算法与数据结构</div>
+      >{{title}}</div>
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: 'hello world'
+    }
+  }
+}
+</script> 
 <style lang="less">
 .box {
   width: 300px;
   height: 150px;
   margin: 0 auto;
   .grid-content {
-    border-radius: 4px;
+    border-radius: 8px;
     min-height: 36px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    border: #001529 1px solid;
+    border: #bbb 1px solid;
+    background-color: #00284d;
     padding: 20px;
     white-space: nowrap; /*禁止自动换行*/
     overflow: hidden;
     .title-style {
       line-height: 100px;
       padding: 0 12px;
-      color: #373e4a;
+      color: #999;
       font-weight: 700;
       font-size: 15px;
     }
