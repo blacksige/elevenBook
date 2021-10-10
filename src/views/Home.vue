@@ -22,20 +22,22 @@ export default {
   name: 'Home',
   data () {
     return {
-      interval: {}
+      interval: {},
+      myChart: {}
     }
   },
   mounted () {
     this.draw();
     this.time()
   },
-  destroyed () {
+  beforeDestroy () {
     clearInterval(this.interval);
+    this.myChart.clear();
   },
   methods: {
     draw () {
       // 基于准备好的dom，初始化echarts实例
-      let myChart = this.$echarts.init(document.getElementById('myChart'))
+      this.myChart = this.$echarts.init(document.getElementById('myChart'))
       // 绘制图表
       var waves = [{
         value: 0.4,
@@ -142,8 +144,9 @@ export default {
           }
         }]
       };
-
+      this.myChart.setOption(option)
       var start = new Date();
+      var that = this;
       this.interval = setInterval(function () {
         var now = new Date();
         var dt = (now - start);
@@ -158,14 +161,14 @@ export default {
           }
         }
 
-        myChart.setOption({
+        that.myChart.setOption({
           series: [{
             data: data
           }]
         })
       }, 2000);
 
-      myChart.setOption(option)
+
     },
     time () {
       var that = this;
