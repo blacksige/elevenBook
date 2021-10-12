@@ -20,25 +20,24 @@ export default {
 </script> 
 <style lang="less">
 .box {
-  width: 300px;
-  height: 150px;
-  // margin: 0 auto;
-  // margin-right: 8%;
+  width: 100%;
   .grid-content {
     border-radius: 8px;
     min-height: 36px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    border: gray 1px solid;
-    background-color: #1c84c1;
+    // border: gray 1px solid;
+    background-color: #ffffff;
     padding: 20px;
     white-space: nowrap; /*禁止自动换行*/
     overflow: hidden;
     .title-style {
+      width: 100%;
+      text-align: right;
       line-height: 100px;
       padding: 0 12px;
-      color: #fff;
+      color: #666;
       font-weight: 700;
       font-size: 15px;
     }
