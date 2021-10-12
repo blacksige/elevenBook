@@ -22,22 +22,23 @@ export default {
 .box {
   width: 300px;
   height: 150px;
-  margin: 0 auto;
+  // margin: 0 auto;
+  // margin-right: 8%;
   .grid-content {
     border-radius: 8px;
     min-height: 36px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    border: #bbb 1px solid;
-    background-color: #00284d;
+    border: gray 1px solid;
+    background-color: #1c84c1;
     padding: 20px;
     white-space: nowrap; /*禁止自动换行*/
     overflow: hidden;
     .title-style {
       line-height: 100px;
       padding: 0 12px;
-      color: #999;
+      color: #fff;
       font-weight: 700;
       font-size: 15px;
     }

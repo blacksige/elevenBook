@@ -58,7 +58,7 @@
 export default {
   data () {
     return {
-      current: ['mail'],
+      current: ['home'],
       name: ''
     };
   },

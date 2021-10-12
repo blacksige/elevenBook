@@ -10,10 +10,8 @@
         <box />
 
         <box />
-
       </div>
       <div class="row">
-
         <box />
 
         <box />
@@ -45,16 +43,18 @@ export default {
 .index {
   height: 100%;
   width: 100%;
-  background-image: url("../assets/8.jpg");
-  background-size: 100% 100%;
+  // background-image: url("../assets/8.jpg");
+  // background-size: 100% 100%;
+  background-color: #284e7c;
   .index-content {
     padding: 50px;
     .row {
+      margin-top: 5%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
-      margin-top: 5%;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
     }
   }
 }
