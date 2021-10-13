@@ -8,18 +8,9 @@
         <box
           v-for="item in boxList1"
           :key="item.index"
-          style="magrn:20px"
           :title="item.title"
+          :url="item.url"
         />
-      </div>
-      <div class="row">
-        <box
-          v-for="item in boxList2"
-          :key="item.index"
-          style="margin: 20px;"
-          :title="item.title"
-        />
-
       </div>
     </div>
 
@@ -42,7 +33,7 @@ export default {
       boxList1: [
         {
           title: '111',
-          url: 'www.baidui.com'
+          url: 'https://i.cnblogs.com/posts/edit'
         },
         {
           title: '111',
@@ -51,12 +42,30 @@ export default {
         {
           title: '111',
           url: 'www.baidui.com'
-        }
-      ],
-      boxList2: [
+        },
+        {
+          title: '333',
+          url: 'www.baidui.com'
+        },
         {
           title: '222',
           url: 'www.baidui.com',
+        },
+        {
+          title: '222',
+          url: 'www.baidui.com'
+        },
+        {
+          title: '222',
+          url: 'www.baidui.com'
+        },
+        {
+          title: '222',
+          url: 'www.baidui.com'
+        },
+        {
+          title: '222',
+          url: 'www.baidui.com'
         },
         {
           title: '222',
@@ -81,17 +90,15 @@ export default {
   // background-image: url("../assets/8.jpg");
   // background-size: 100% 100%;
   background-color: #f2f2f2;
+  overflow: auto;
   .index-content {
-    padding: 100px 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    padding: 80px;
     .row {
-      width: 48%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       flex-wrap: wrap;
     }
   }
@@ -106,6 +113,38 @@ export default {
 }
 .box:nth-child(3) .grid-content {
   background-image: url("../assets/小狗3.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(4) .grid-content {
+  background-image: url("../assets/茱萸.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(5) .grid-content {
+  background-image: url("../assets/菊花1.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(6) .grid-content {
+  background-image: url("../assets/菊花2.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(7) .grid-content {
+  background-image: url("../assets/菊花3.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(8) .grid-content {
+  background-image: url("../assets/酒杯.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(9) .grid-content {
+  background-image: url("../assets/酒壶.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(10) .grid-content {
+  background-image: url("../assets/风筝.png");
+  background-repeat: no-repeat;
+}
+.box:nth-child(11) .grid-content {
+  background-image: url("../assets/花苞.png");
   background-repeat: no-repeat;
 }
 </style>

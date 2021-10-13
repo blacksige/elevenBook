@@ -3,7 +3,7 @@
     <div class="grid-content bg-purple">
       <div
         class="title-style"
-        @click="$open('https://github.com/skidding/illustrated-algorithms')"
+        @click="openUrl(url)"
       >{{title}}</div>
     </div>
   </div>
@@ -14,13 +14,27 @@ export default {
     title: {
       type: String,
       default: 'hello world'
+    },
+    url:{
+      type:String,
+      default:'https://www.baidu.com'
+    }
+  },
+  methods:{
+    openUrl(url){
+      window.open(url,"_blank");
+      //_blank : 在新窗口打开
+      //_self : 在当前窗口打开
+      
+      //window.location.href = url : 当前页面重定向
     }
   }
 }
 </script> 
 <style lang="less">
 .box {
-  width: 100%;
+  width: 400px;
+  margin: 20px;
   .grid-content {
     border-radius: 8px;
     min-height: 36px;
