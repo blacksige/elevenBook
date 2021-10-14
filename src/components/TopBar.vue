@@ -55,7 +55,7 @@
 
       <a-menu-item key="alipay">
         <a-icon type="smile" />
-        关于我
+        个人博客
       </a-menu-item>
 
       <a-menu-item style="float: right;">
