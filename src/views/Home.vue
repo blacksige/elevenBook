@@ -138,7 +138,7 @@ export default {
                 fontSize: 72
               },
               formatter: function () {
-                return '浮世绘';
+                return '我是blacksige,一个前端工程师';
               }
             }
           }

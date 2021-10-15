@@ -53,12 +53,20 @@
         <a-icon type="appstore" />网站源码
       </a-menu-item>
 
-      <a-menu-item key="alipay">
+      <a-menu-item key="myBook">
         <a-icon type="smile" />
         个人博客
       </a-menu-item>
 
-      <a-menu-item style="float: right;">
+      <a-menu-item key="git">
+        <a-icon type="global" />
+        github代码仓库
+      </a-menu-item>
+
+      <a-menu-item
+        style="float: right;"
+        key="name"
+      >
         Hi,<span style="font-size: 16px;">{{name}}</span>
       </a-menu-item>
     </a-menu>
@@ -81,8 +89,14 @@ export default {
   methods: {
     handleClick (e) {
       console.log(this.$route.path);
-      if (this.$route.path != '/'.concat(e.key)) {
+      if (this.$route.path != '/'.concat(e.key) && e.key != 'app' && e.key != 'name' && e.key != 'myBook' && e.key != 'git') {
         this.$router.push('/'.concat(e.key))
+      } else if (e.key == 'app') {
+        window.open('https://github.com/blacksige/elevenBook', "_blank");
+      } else if (e.key == 'myBook') {
+        window.open('https://www.cnblogs.com/ifeelthecall/', "_blank");
+      } else if (e.key == 'git') {
+        window.open('https://github.com/blacksige', "_blank");
       }
 
 
