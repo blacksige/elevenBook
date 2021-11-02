@@ -138,7 +138,7 @@ export default {
                 fontSize: 72
               },
               formatter: function () {
-                return '我是blacksige,一个前端工程师';
+                return '登录中......';
               }
             }
           }

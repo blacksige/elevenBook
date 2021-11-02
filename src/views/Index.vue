@@ -32,19 +32,19 @@ export default {
     return {
       boxList1: [
         {
-          title: '111',
+          title: '阮一峰的网络日志',
           url: 'https://i.cnblogs.com/posts/edit'
         },
         {
-          title: '111',
+          title: 'Lodash中文文档',
           url: 'www.baidui.com',
         },
         {
-          title: '111',
+          title: 'MDN Web Docs',
           url: 'www.baidui.com'
         },
         {
-          title: '333',
+          title: 'Can I use ...',
           url: 'www.baidui.com'
         },
         {
