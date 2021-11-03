@@ -15,17 +15,17 @@ export default {
       type: String,
       default: 'hello world'
     },
-    url:{
-      type:String,
-      default:'https://www.baidu.com'
+    url: {
+      type: String,
+      default: 'https://www.baidu.com'
     }
   },
-  methods:{
-    openUrl(url){
-      window.open(url,"_blank");
+  methods: {
+    openUrl (url) {
+      window.open(url, "_blank");
       //_blank : 在新窗口打开
       //_self : 在当前窗口打开
-      
+
       //window.location.href = url : 当前页面重定向
     }
   }
@@ -48,7 +48,7 @@ export default {
     overflow: hidden;
     .title-style {
       width: 100%;
-      text-align: right;
+      text-align: left;
       line-height: 100px;
       padding: 0 12px;
       color: #666;

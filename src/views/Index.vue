@@ -104,47 +104,41 @@ export default {
   }
 }
 .box:nth-child(1) .grid-content {
-  background-image: url("../assets/小狗.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-deep.png");
 }
 .box:nth-child(2) .grid-content {
-  background-image: url("../assets/小狗2.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-flow.png");
 }
 .box:nth-child(3) .grid-content {
-  background-image: url("../assets/小狗3.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-gril.png");
 }
 .box:nth-child(4) .grid-content {
-  background-image: url("../assets/茱萸.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-garbage.png");
 }
 .box:nth-child(5) .grid-content {
-  background-image: url("../assets/菊花1.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-ground.png");
 }
 .box:nth-child(6) .grid-content {
-  background-image: url("../assets/菊花2.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-line.png");
 }
 .box:nth-child(7) .grid-content {
-  background-image: url("../assets/菊花3.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-man-garbage.png");
 }
 .box:nth-child(8) .grid-content {
-  background-image: url("../assets/酒杯.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-play.png");
 }
 .box:nth-child(9) .grid-content {
-  background-image: url("../assets/酒壶.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-tree.png");
 }
 .box:nth-child(10) .grid-content {
-  background-image: url("../assets/风筝.png");
-  background-repeat: no-repeat;
+  background-image: url("../assets/sea-img/sea-tree-gril.png");
 }
 .box:nth-child(11) .grid-content {
-  background-image: url("../assets/花苞.png");
+  background-image: url("../assets/sea-img/sea-white.png");
+}
+.box .grid-content {
   background-repeat: no-repeat;
+  background-size: 200px 150px;
+  background-position: right;
 }
 </style>
