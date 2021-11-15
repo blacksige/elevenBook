@@ -20,30 +20,36 @@
           <a-icon type="radar-chart" />算法与数据结构
         </span>
 
-        <a-menu-item-group title="Item 1">
-          <a-menu-item key="setting:1">
-            Option 1
-          </a-menu-item>
-          <a-menu-item key="setting:2">
-            Option 2
+        <a-menu-item-group title="算法基本">
+          <a-menu-item key="page1">
+            时间与空间复杂度
           </a-menu-item>
         </a-menu-item-group>
 
-        <a-menu-item-group title="Item 2">
-          <a-menu-item key="setting:3">
-            Option 3
+        <a-menu-item-group title="数据结构">
+          <a-menu-item key="page2">
+            线性表
           </a-menu-item>
-          <a-menu-item key="setting:4">
-            Option 4
+          <a-menu-item key="page3">
+            递归
+          </a-menu-item>
+          <a-menu-item key="page4">
+            非线性表
           </a-menu-item>
         </a-menu-item-group>
 
-        <a-menu-item-group title="Item 3">
-          <a-menu-item key="setting:5">
-            Option 5
+        <a-menu-item-group title="排序">
+          <a-menu-item key="page5">
+            冒泡、选择、插入排序
           </a-menu-item>
-          <a-menu-item key="setting:6">
-            Option 6
+          <a-menu-item key="page6">
+            归并、快速、希尔、堆排序
+          </a-menu-item>
+          <a-menu-item key="page7">
+            计数、桶、基数排序  
+          </a-menu-item>
+          <a-menu-item key="page8">
+            经典排序算法汇总
           </a-menu-item>
         </a-menu-item-group>
 
@@ -63,12 +69,21 @@
         github代码仓库
       </a-menu-item>
 
-      <a-menu-item
-        style="float: right;"
-        key="name"
-      >
-        Hi,<span style="font-size: 16px;">{{name}}</span>
-      </a-menu-item>
+
+      <a-sub-menu style="float: right;">
+
+        <span
+          slot="title"
+          class="submenu-title-wrapper"
+        >
+            Hi,<span style="font-size: 16px;">{{name}}</span>
+        </span>
+
+          <a-menu-item key="name">
+            退出
+          </a-menu-item>
+      </a-sub-menu>
+
     </a-menu>
   </div>
 </template>
@@ -97,7 +112,10 @@ export default {
         window.open('https://www.cnblogs.com/ifeelthecall/', "_blank");
       } else if (e.key == 'git') {
         window.open('https://github.com/blacksige', "_blank");
+      } else if (e.key == 'name') {
+         this.$router.push('/login')
       }
+
 
 
     },

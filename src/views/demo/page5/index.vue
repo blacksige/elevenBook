@@ -1,5 +1,8 @@
 <template>
-  <d2-container>
+  <div>
+    <div id="nav">
+       <top-bar />
+    </div>
     <div class="content">
       <div class="d-block comment-body markdown-body  js-comment-body">
         <h2>1. 平均时间复杂度都为 O(n<sup>2</sup>)的算法</h2>
@@ -473,22 +476,29 @@ binaryInsertionSort(array2);
         </table>
       </div>
     </div>
-  </d2-container>
+  </div>
 </template>
 
 <script>
+
+import TopBar from '@/components/TopBar'
+
 export default {
-  name: 'page5'
+  name: 'page5',
+  components:{
+    TopBar
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .content {
   width: 60%;
   margin: 0 auto;
   background-color: #ebf1f6;
   padding: 30px 60px;
   border-radius: 12px;
+  text-align: left;
 }
 .play-style {
   opacity: 0.4;

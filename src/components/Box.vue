@@ -4,7 +4,10 @@
       <div
         class="title-style"
         @click="openUrl(url)"
-      >{{title}}</div>
+      >
+        {{title}}
+        <!-- <span  style="color:#666; display:block">123123333</span> -->
+      </div>
     </div>
   </div>
 </template>
@@ -33,7 +36,8 @@ export default {
 </script> 
 <style lang="less">
 .box {
-  width: 400px;
+  width: 22%;
+  min-width: 300px;
   margin: 20px;
   .grid-content {
     border-radius: 8px;
@@ -50,10 +54,10 @@ export default {
       width: 100%;
       text-align: left;
       line-height: 100px;
-      padding: 0 12px;
-      color: #666;
+      padding: 0 8px;
+      color: #333;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 13px;
     }
   }
   .grid-content:hover {

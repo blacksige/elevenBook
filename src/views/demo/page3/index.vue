@@ -1,5 +1,8 @@
 <template>
-  <d2-container>
+  <div>
+    <div id="nav">
+       <top-bar />
+    </div>
     <div class="content">
       <div class="d-block comment-body markdown-body  js-comment-body">
 
@@ -181,21 +184,28 @@ function getLeafCountTree(json) {
         <p>递归遍历是比较常用的方法，比如：省市区遍历成树、多叉树、阶乘等。</p>
       </div>
     </div>
-  </d2-container>
+  </div>
 </template>
 
 <script>
+
+import TopBar from '@/components/TopBar'
+
 export default {
-  name: 'page3'
+  name: 'page3',
+  components:{
+    TopBar
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .content {
   width: 60%;
   margin: 0 auto;
   background-color: #ebf1f6;
   padding: 30px 60px;
   border-radius: 12px;
+  text-align: left;
 }
 </style>

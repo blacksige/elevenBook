@@ -44,7 +44,7 @@ module.exports = {
     loaderOptions: {
       css: {}, // 这里的选项会传递给 css-loader
       less: {
-        // http://lesscss.org/usage/#less-options-strict-units `Global Variables`
+        // http://lessass.org/usage/#less-options-strict-units `Global Variables`
         // `primary` is global variables fields name
         globalVars: {
           primary: '#fff'

@@ -1,5 +1,8 @@
 <template>
-  <d2-container>
+  <div>
+    <div id="nav">
+       <top-bar />
+    </div>
     <div class="content">
       <div class="d-block comment-body markdown-body  js-comment-body">
 
@@ -1267,21 +1270,28 @@ circularLinked.list(); // 具体控制台
 
       </div>
     </div>
-  </d2-container>
+  </div>
 </template>
 
 <script>
+
+import TopBar from '@/components/TopBar'
+
 export default {
-  name: 'page2'
+  name: 'page2',
+  components:{
+    TopBar
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .content {
   width: 60%;
   margin: 0 auto;
   background-color: #ebf1f6;
   padding: 30px 60px;
   border-radius: 12px;
+  text-align: left;
 }
 </style>

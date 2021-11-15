@@ -34,7 +34,40 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import( '../views/Login.vue')
-  }
+  },
+  {
+    path: '/page1',
+    name: 'Page1',
+    component: () => import( '../views/demo/page1/index.vue')
+  },{
+    path: '/page2',
+    name: 'Page2',
+    component: () => import( '../views/demo/page2/index.vue')
+  }, {
+    path: '/page3',
+    name: 'Page3',
+    component: () => import( '../views/demo/page3/index.vue')
+  }, {
+    path: '/page4',
+    name: 'Page4',
+    component: () => import( '../views/demo/page4/index.vue')
+  }, {
+    path: '/page5',
+    name: 'Page5',
+    component: () => import( '../views/demo/page5/index.vue')
+  }, {
+    path: '/page6',
+    name: 'Page6',
+    component: () => import( '../views/demo/page6/index.vue')
+  },{
+    path: '/page7',
+    name: 'Page7',
+    component: () => import( '../views/demo/page7/index.vue')
+  },{
+    path: '/page8',
+    name: 'Page8',
+    component: () => import( '../views/demo/page8/index.vue')
+  },
 ]
 
 const router = new VueRouter({
